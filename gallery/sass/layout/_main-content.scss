@@ -1,0 +1,124 @@
+main {
+  width: 100%;
+  padding: 8rem 0;
+
+  .filter-gallery-container {
+    margin: 0 auto;
+    max-width: 1220px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media (max-width: 768px) {
+      display: block;
+    }
+
+    .filter-container {
+      width: 22%;
+
+      @media (max-width: 768px) {
+        width: 95%;
+        margin: 0 auto 2rem auto !important;
+      }
+
+      @media (max-width: 1220px) {
+        margin-left: 1rem;
+      }
+
+      h1 {
+        // background-image: linear-gradient(to right, #f95700, #f88141);
+        background-color: $color-black;
+        font-size: 2rem;
+        text-transform: uppercase;
+        padding: 1rem;
+        color: $color-white;
+
+        @media (max-width: 1220px) {
+          font-size: 1.8rem;
+        }
+      }
+
+      .category {
+        h2 {
+          font-size: 1.8rem;
+          text-transform: uppercase;
+          padding: 1rem;
+          background-image: linear-gradient(to right, #f95700, #f88141);
+          color: white;
+
+          @media (max-width: 1220px) {
+            font-size: 1.5rem;
+          }
+        }
+
+        .category-item {
+          background-color: $color-bg-gray-2;
+          padding: 1rem;
+          font-size: 1.8rem;
+          text-transform: capitalize;
+          display: flex;
+          align-items: center;
+
+          @media (max-width: 1220px) {
+            font-size: 1.5rem;
+          }
+
+          label {
+            margin-left: 1rem;
+          }
+
+          input[type="checkbox"] {
+            appearance: none;
+            -webkit-appearance: none;
+            width: 20px;
+            height: 20px;
+            background-color: $color-white-secondary;
+            border-radius: 3px;
+            border: 1px solid gray;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &::after {
+              font-family: "Font Awesome 5 Pro";
+              font-weight: 900;
+              content: "\f00c";
+              font-size: 15px;
+              color: white;
+              display: none;
+            }
+
+            &:hover {
+              background-color: gray;
+            }
+
+            &:checked {
+              border: 0;
+              background-image: linear-gradient(to right, #f95700, #f88141);
+            }
+
+            &:checked::after {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+
+    .gallery-container {
+      width: 75%;
+      height: 500px;
+      background-color: gray;
+
+      @media (max-width: 768px) {
+        width: 95%;
+        margin: 0 auto !important;
+      }
+
+      @media (max-width: 1220px) {
+        margin-right: 1rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+//UTILITY CLASSES
+.u-hamburger-menu-full {
+  height: 300px !important;
+}
+.u-blog_dropdown-full {
+  display: block !important;
+}
+.u-color-black {
+  color: $color-black;
+}
+
+.u-bg-lightgray {
+  background-color: $color-bg-gray;
+}
+
+.u-column-width {
+  // width: 20% !important;
+  margin-right: 10rem;
+  min-width: 250px;
+  max-height: 196px;
+
+  @media (max-width: 1085px) {
+    width: 50% !important;
+    margin-right: 5rem !important;
+  }
+
+  @media (max-width: 770px) {
+    width: 100% !important;
+    margin-right: 0 !important;
+  }
+
+  p {
+    @media (max-width: 325px) {
+      font-size: 1.5rem !important;
+    }
+  }
+
+  @media (max-width: 770px) {
+    margin-bottom: 5rem !important;
+  }
+}

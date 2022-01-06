@@ -1,0 +1,58 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 5rem 2rem 0 2rem;
+
+    .heading {
+      width: 50%;
+      padding-bottom: 5rem;
+
+      @media only screen and (max-width: 643px) {
+        width: 100%;
+      }
+
+      h3 {
+        font-size: 5rem;
+        padding-bottom: 1rem;
+        border-bottom: 3px solid $color-black;
+        font-family: "Fredoka One", sans-serif;
+
+        @media only screen and (max-width: 710px) {
+          font-size: 4rem;
+        }
+
+        @media only screen and (max-width: 308px) {
+          font-size: 3rem;
+        }
+      }
+    }
+
+    .box {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      @media only screen and (max-width: 769px) {
+        flex-direction: column;
+      }
+
+      .dream {
+        display: flex;
+        flex-direction: column;
+        width: 32.5%;
+
+        @media only screen and (max-width: 769px) {
+          width: 100%;
+        }
+
+        img {
+          width: 100%;
+          padding-bottom: 1.5rem;
+          border-radius: 5px;
+        }
+      }
+    }
+  }

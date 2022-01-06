@@ -1,0 +1,64 @@
+//HEADER TEXT STYLING
+
+.header-text {
+  width: 90%;
+  text-align: center;
+
+  //ORANGE LINE IN HEADER TEXT
+  .text {
+    font-size: 3rem;
+    font-weight: 600;
+    color: transparent;
+    background-image: linear-gradient(
+          to right,
+          rgb(249, 87, 0),
+          rgb(248, 129, 65)
+        );
+        -webkit-background-clip: text;
+    margin-bottom: 2rem;
+    animation: moveInBottom 1s ease-out 0.5s;
+    animation-fill-mode: backwards;
+
+    @media (max-width: 1140px) {
+      font-size: 2rem;
+    }
+  }
+
+  //PRIMARY HEADING
+  .primary-heading {
+    margin-bottom: 6rem;
+    span {
+      color: $color-white;
+    }
+
+    //PRIMARY HEADING LINE 1
+    &__main {
+      font-size: 6rem;
+      display: block;
+      animation: moveInRight 1s ease-out 0.5s;
+      animation-fill-mode: backwards;
+
+      @media (max-width: 1140px) {
+        font-size: 4rem;
+      }
+      @media (max-width: 375px) {
+        font-size: 3rem;
+      }
+    }
+
+    //PRIMARY HEADING LINE 2
+    &__sub {
+      font-size: 3rem;
+      display: block;
+      animation: moveInLeft 1s ease-out 0.5s;
+      animation-fill-mode: backwards;
+
+      @media (max-width: 1140px) {
+        font-size: 2rem;
+      }
+      @media (max-width: 375px) {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

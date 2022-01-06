@@ -1,0 +1,17 @@
+<<<<<<< HEAD
+asli content
+navbar k options or dropdown
+motto
+slider
+footer links (asli content)
+faq accordion
+gallery images
+=======
+asli content
+navbar k options or dropdown
+motto (asli content)
+slider
+footer links (asli content)
+faq accordion
+gallery images
+>>>>>>> 8e3bdf5c2d705609611c7236a2d1de447c722a27

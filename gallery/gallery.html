@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="patrona">
+  <head>
+    <link rel="stylesheet" href="css/gallery.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js"
+      integrity="sha512-7oYXeK0OxTFxndh0erL8FsjGvrl2VMDor6fVqzlLGfwOQQqTbYsGPv4ZZ15QHfSk80doyaM0ZJdvkyDcVO7KFA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="../imgs/faviconn.png" />
+    <title>Patrona Puppy | Breeds</title>
+  </head>
+  <body ng-controller="mainController">
+    <!--HEADER-->
+    <header class="header">
+      <!--A CONTAINER FOR CONVENIENCE-->
+      <div class="header-content">
+        <!--MAIN NAVBAR-->
+        <nav class="nav-bar">
+          <a href="../index.html" class="nav-bar__brand">
+            <div class="brand-logo">
+              <img src="../imgs/Paw_Print.svg" alt="" />
+            </div>
+            <div class="brand-name">Patrona<span>Puppy</span></div>
+          </a>
+          <div class="nav-bar__items">
+            <ul class="nav-bar__links">
+              <li class="nav-bar__link"><a href="../index.html">Home</a>
+              </li>
+              <li class="nav-bar__link">Blog +
+                <div class="dropdown">
+                  <a href="../Nutrition/nutrition.html" class="option">Dogs Nutrition</a>
+                  <a href="../FAQ/faq.html" class="option">FAQ</a>
+                  <a href="../about us/about.html" class="option">About Us</a>
+                </div>
+              </li>
+              <li class="nav-bar__link"><a href="../gallery/gallery.html" class="option">Dog Breeds</a>
+              </li>
+            </ul>
+            <div class="nav-bar__button">
+              <a href="../image gallery/image-gallery.html" class="btn">My Collection</a>
+            </div>
+            <div class="nav-bar__hamburger"  id="hamburger" ng-click="hamburger_menu=!hamburger_menu">
+              <i class="far fa-bars" id="ham-icon" ></i>
+            </div>
+        </nav>
+        <div class="navbar-dropdown u-display-block" id="menu" >
+          <ul class="navbar-dropdown__options" ng-class="{'u-hamburger-menu-full': hamburger_menu}">
+            <li class="navbar-dropdown__option">
+              <a href="../index.html" class="option">Home</a>
+            </li>
+            <li class="navbar-dropdown__option">
+              <a href="#" class="option" id="blog" ng-click="blog_dropdown=!blog_dropdown">Blog &plus;</a>
+              <ul class="navbar-dropdown__option--menu" ng-class="{'u-blog_dropdown-full': blog_dropdown}">
+                <li class="menu-option">
+                  <a href="../Nutrition/nutrition.html" class="option">Dogs Nutrition</a>
+                </li>
+                <li class="menu-option">
+                  <a href="../faq/faq.html" class="option">FAQ</a>
+                </li>
+                <li class="menu-option">
+                  <a href="../about us/about.html" class="option">About Us</a>
+                </li>
+              </ul>
+            </li>
+            <li class="navbar-dropdown__option">
+              <a href="../gallery/gallery.html" class="option">Dog Breeds</a>
+            </li>
+            <li class="navbar-dropdown__option">
+              <a href="../image gallery/image-gallery.html" class="option ham-menu-btn my-collection">My Collection</a>
+            </li>
+          </ul>
+        </div>
+        <!--MAIN ANIMATED HEADER TEXT-->
+        <div class="header-text">
+          <h1 class="primary-heading">
+            <!--SEPARATING LINES FOR APPLICATION OF DIFFERENT ANIMATIONS-->
+            <span class="primary-heading__main">
+             Dog breeds
+            </span>
+            <span class="primary-heading__sub">
+              know about dog breeds
+            </span>
+          </h1>
+          <a href="#gallery" class="btn">Find Out !</a>
+        </div>
+      </div>
+    </header>
+    <!--MAIN CONTENT-->
+    <main id="gallery">
+      <section class="filter-gallery-container">
+        <div class="filter-container">
+          <h1>filter</h1>
+          <div class="size-container category">
+            <h2>size</h2>
+            <div class="small category-item">
+              <input type="checkbox" id="small" />
+              <label for="small">small</label>
+            </div>
+            <div class="medium category-item">
+              <input type="checkbox" id="medium" />
+              <label for="medium">medium</label>
+            </div>
+            <div class="large category-item">
+              <input type="checkbox" id="large" />
+              <label for="large">large</label>
+            </div>
+          </div>
+          <div class="hypoallergenic category">
+            <h2>character</h2>
+            <div class="hypoallergenic category-item">
+              <input type="checkbox" id="hypoallergenic" />
+              <label for="hypoallergenic">hypoallergenic</label>
+            </div>
+            <div class="fluffy category-item">
+              <input type="checkbox" id="fluffy" />
+              <label for="fluffy">fluffy</label>
+            </div>
+            <div class="smartest category-item">
+              <input type="checkbox" id="smartest" />
+              <label for="smartest">smartest</label>
+            </div>
+            <div class="best-guard category-item">
+              <input type="checkbox" id="best-guard" />
+              <label for="best-guard">best guard</label>
+            </div>
+          </div>
+          <div class="color category">
+            <h2>color</h2>
+            <div class="white category-item">
+              <input type="checkbox" id="white" />
+              <label for="white">white</label>
+            </div>
+            <div class="black category-item">
+              <input type="checkbox" id="black" />
+              <label for="black">black</label>
+            </div>
+            <div class="others category-item">
+              <input type="checkbox" id="others" />
+              <label for="others">others</label>
+            </div>
+          </div>
+          <div class="geography category">
+            <h2>geography</h2>
+            <div class="asia category-item">
+              <input type="checkbox" id="asia" />
+              <label for="asia">asia</label>
+            </div>
+            <div class="america category-item">
+              <input type="checkbox" id="america" />
+              <label for="america">america</label>
+            </div>
+            <div class="europe category-item">
+              <input type="checkbox" id="europe" />
+              <label for="europe">europe</label>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-container"></div>
+      </section>
+    </main>
+
+    <!--FOOTER-->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-content__main">
+          <div class="column u-column-width">
+            <h4>About Patrona Puppy</h4>
+            <p>
+              This is website of a veteran want to share about all dogs she has met and research on. This is also a location for person love dogs and has desire to explore more about this creature.
+            </p>
+          </div>
+          <div class="column">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../FAQ/faq.html">FAQ</a></li>
+              <li><a href="../Nutrition/nutrition.html">Dog Nutrition</a></li>
+              <li><a href="../gallery/gallery.html">Dog Breeds</a></li>
+              <li><a href="../image gallery/image-gallery.html">My Collection</a></li>
+            </ul>
+          </div>
+          <div class="column">
+            <h4>Follow Us On</h4>
+            <div class="social-media-handles">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../script/script.js"></script>
+  </body>
+</html>
