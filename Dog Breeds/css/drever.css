@@ -39,6 +39,98 @@ body {
   margin-block: 0.5em;
 }
 
+.footer {
+  background-color: #181818;
+  padding: 7rem 0;
+}
+.footer .footer-content {
+  max-width: 1250px;
+  margin: auto;
+}
+.footer .footer-content .footer-content__main {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer .footer-content .footer-content__main .column {
+  width: 30%;
+  padding: 0 3rem;
+}
+@media (max-width: 770px) {
+  .footer .footer-content .footer-content__main .column {
+    width: 50%;
+    margin-bottom: 2.5rem;
+  }
+}
+@media (max-width: 368px) {
+  .footer .footer-content .footer-content__main .column {
+    width: 100%;
+  }
+}
+.footer .footer-content .footer-content__main .column h4 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+  position: relative;
+  color: transparent;
+  background-image: linear-gradient(to right, #f95700, #f88141);
+  -webkit-background-clip: text;
+  font-weight: 800;
+}
+.footer .footer-content .footer-content__main .column h4::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 4rem;
+  left: 0;
+  bottom: -5px;
+  background-color: #f88141;
+}
+.footer .footer-content .footer-content__main .column p {
+  font-size: 1.8rem;
+  color: #747272;
+}
+.footer .footer-content .footer-content__main .column ul {
+  list-style: none;
+}
+.footer .footer-content .footer-content__main .column ul li a {
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  color: #747272;
+  display: inline-block;
+  transition: all 400ms;
+}
+.footer .footer-content .footer-content__main .column ul li a:hover {
+  color: #fff;
+  transform: translateX(-1rem);
+}
+.footer .footer-content .footer-content__main .column ul li:not(last-child) {
+  margin-bottom: 1.2rem;
+}
+.footer .footer-content .footer-content__main .column .social-media-handles {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer .footer-content .footer-content__main .column .social-media-handles a {
+  display: inline-block;
+  width: 5rem;
+  height: 5rem;
+  color: #fff;
+  border-radius: 50%;
+  background-color: #f05806;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 4rem;
+  margin: 0 1.2rem 1.2rem 0;
+  font-size: 2.2rem;
+  transition: all 200ms;
+}
+.footer .footer-content .footer-content__main .column .social-media-handles a:hover {
+  transform: scale(1.2);
+  color: #181818;
+  background-color: #fff;
+}
+
 main {
   width: 100%;
   padding: 8rem 0;
