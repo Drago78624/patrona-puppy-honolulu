@@ -664,6 +664,7 @@ body {
   .nav-bar__button {
     display: block;
     margin-right: 2rem;
+    margin-top: 0.3rem;
   }
 }
 @media (min-width: 992px) {
@@ -692,6 +693,8 @@ body {
   z-index: 3000;
   box-shadow: 0 1px 10px #181818;
   min-height: 70px;
+  max-height: 106px;
+  padding: 0 2rem;
 }
 .nav-bar__brand {
   margin-left: 1rem;
@@ -985,37 +988,6 @@ main .filter-gallery-container .filter-container .category .category-item {
 }
 main .filter-gallery-container .filter-container .category .category-item label {
   margin-left: 1rem;
-}
-main .filter-gallery-container .filter-container .category .category-item input[type=checkbox] {
-  appearance: none;
-  -webkit-appearance: none;
-  width: 20px;
-  height: 20px;
-  background-color: #FFFFFF;
-  border-radius: 3px;
-  border: 1px solid gray;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-main .filter-gallery-container .filter-container .category .category-item input[type=checkbox]::after {
-  font-family: "Font Awesome 5 Pro";
-  font-weight: 900;
-  content: "\f00c";
-  font-size: 12px;
-  color: white;
-  display: none;
-}
-main .filter-gallery-container .filter-container .category .category-item input[type=checkbox]:hover {
-  background-color: gray;
-}
-main .filter-gallery-container .filter-container .category .category-item input[type=checkbox]:checked {
-  border: 0;
-  background-image: linear-gradient(to right, #f95700, #f88141);
-}
-main .filter-gallery-container .filter-container .category .category-item input[type=checkbox]:checked::after {
-  display: block;
 }
 main .filter-gallery-container .gallery-container {
   width: 75%;

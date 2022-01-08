@@ -1,0 +1,28 @@
+main {
+    position: relative;
+    .btn {
+        font-size: 2rem;
+        color: $color-white;
+        padding: 1rem 2rem;
+        background-image: linear-gradient(
+          to left bottom,
+          rgb(249, 87, 0),
+          rgb(248, 129, 65)
+        );
+        border-radius: 5px;
+        position: absolute;
+        left: 10%;
+
+        @media (max-width: 992px) {
+            left: 2%;
+        }
+
+        @media (max-width: 640px) {
+            font-size: 1.8rem;
+        }
+    }
+
+    h2 {
+        margin-top: 10rem;
+    }
+}

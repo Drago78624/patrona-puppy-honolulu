@@ -347,4 +347,30 @@ main .container .box .dream img {
   border-radius: 5px;
 }
 
+main {
+  position: relative;
+}
+main .btn {
+  font-size: 2rem;
+  color: #fff;
+  padding: 1rem 2rem;
+  background-image: linear-gradient(to left bottom, #f95700, #f88141);
+  border-radius: 5px;
+  position: absolute;
+  left: 10%;
+}
+@media (max-width: 992px) {
+  main .btn {
+    left: 2%;
+  }
+}
+@media (max-width: 640px) {
+  main .btn {
+    font-size: 1.8rem;
+  }
+}
+main h2 {
+  margin-top: 10rem;
+}
+
 /*# sourceMappingURL=drever.css.map */

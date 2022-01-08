@@ -26,7 +26,6 @@ main {
       }
 
       h1 {
-        // background-image: linear-gradient(to right, #f95700, #f88141);
         background-color: $color-black;
         font-size: 2rem;
         text-transform: uppercase;
@@ -65,42 +64,6 @@ main {
 
           label {
             margin-left: 1rem;
-          }
-
-          input[type="checkbox"] {
-            appearance: none;
-            -webkit-appearance: none;
-            width: 20px;
-            height: 20px;
-            background-color: $color-white-secondary;
-            border-radius: 3px;
-            border: 1px solid gray;
-            cursor: pointer;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            &::after {
-              font-family: "Font Awesome 5 Pro";
-              font-weight: 900;
-              content: "\f00c";
-              font-size: 12px;
-              color: white;
-              display: none;
-            }
-
-            &:hover {
-              background-color: gray;
-            }
-
-            &:checked {
-              border: 0;
-              background-image: linear-gradient(to right, #f95700, #f88141);
-            }
-
-            &:checked::after {
-              display: block;
-            }
           }
         }
       }
