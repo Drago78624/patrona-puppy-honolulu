@@ -15,6 +15,7 @@ main {
 
     .filter-container {
       width: 22%;
+      position: relative;
 
       @media (max-width: 768px) {
         width: 95%;
@@ -23,6 +24,20 @@ main {
 
       @media (max-width: 1220px) {
         margin-left: 1rem;
+      }
+
+      .btn {
+        font-size: 2rem;
+        color: $color-white;
+        padding: 1rem 2rem;
+        background-image: linear-gradient(
+          to left bottom,
+          rgb(249, 87, 0),
+          rgb(248, 129, 65)
+        );
+        border-radius: 5px;
+        display: inline-block;
+        margin-top: 2rem;
       }
 
       h1 {
@@ -36,7 +51,6 @@ main {
           font-size: 1.8rem;
         }
       }
-
       .category {
         h2 {
           font-size: 1.8rem;

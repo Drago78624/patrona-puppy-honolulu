@@ -937,6 +937,7 @@ main .filter-gallery-container {
 }
 main .filter-gallery-container .filter-container {
   width: 22%;
+  position: relative;
 }
 @media (max-width: 768px) {
   main .filter-gallery-container .filter-container {
@@ -948,6 +949,15 @@ main .filter-gallery-container .filter-container {
   main .filter-gallery-container .filter-container {
     margin-left: 1rem;
   }
+}
+main .filter-gallery-container .filter-container .btn {
+  font-size: 2rem;
+  color: #fff;
+  padding: 1rem 2rem;
+  background-image: linear-gradient(to left bottom, #f95700, #f88141);
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 2rem;
 }
 main .filter-gallery-container .filter-container h1 {
   background-color: #181818;
