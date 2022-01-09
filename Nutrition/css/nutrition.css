@@ -591,7 +591,7 @@ body {
 .navbar-dropdown .navbar-dropdown__option .navbar-dropdown__option--menu {
   display: none;
   padding: 1rem 2rem;
-  background-color: #e6cbcb;
+  background-color: #181818;
   border-radius: 5px;
   animation: heightIncrease 200ms;
 }
@@ -664,6 +664,7 @@ body {
   .nav-bar__button {
     display: block;
     margin-right: 2rem;
+    margin-top: 0.3rem;
   }
 }
 @media (min-width: 992px) {
@@ -692,6 +693,8 @@ body {
   z-index: 3000;
   box-shadow: 0 1px 10px #181818;
   min-height: 70px;
+  max-height: 106px;
+  padding: 0 2rem;
 }
 .nav-bar__brand {
   margin-left: 1rem;
